@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - b2t</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">b2t</a></div>
+      <nav>
+        <ul class="nav-list">
+          <li class="has-dropdown"><a href="#">Solutions</a>
+            <ul class="dropdown-menu">
+              <li><a href="solutions-trading-overview.html">Trading Overview</a></li>
+              <li><a href="otc-products.html">OTC Products</a></li>
+              <li><a href="liquidity-partner.html">Liquidity Partner</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#" class="active">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="social-impact-csr.html">Social Impact and CSR</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">Institutional Insight</a></li>
+          <li class="has-dropdown"><a href="#">Join b2t</a>
+            <ul class="dropdown-menu">
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="#">Partnerships</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="button">CONTACT</a>
+        <button class="button subscribe" id="subscribe-btn">SUBSCRIBE</button>
+        <div id="subscribe-popup" style="display:none;position:absolute;top:100%;right:0;z-index:9999;background:#fff;border-radius:12px;box-shadow:0 4px 24px rgba(0,86,98,0.18);border:2px solid #009688;max-width:370px;width:340px;padding:2rem 2rem 1.5rem 2rem;">
+          <button id="close-popup" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.3rem;color:#005662;cursor:pointer;">&times;</button>
+          <div style="color:#009688;font-size:1.2rem;font-weight:600;margin-bottom:0.7em;">Read our news & commentary</div>
+          <div style="color:#005662;font-size:1.02rem;margin-bottom:1.2em;">Sign up to our news alerts to receive our regular newsletter and institutional insights into the crypto market direct to your inbox.</div>
+          <div style="color:#005662;font-size:0.95rem;margin-bottom:1.2em;">b2t does not transact with or provide any service to any retail investor or consumer. By subscribing to our content, you represent that you are not a retail investor or consumer. Please refer to our disclaimer for further information.</div>
+          <form>
+            <div style="margin-bottom:1em;">
+              <input type="email" placeholder="Enter email here" style="width:100%;padding:0.7em 1em;border:1.5px solid #e0e7ef;border-radius:6px;font-size:1rem;">
+            </div>
+            <button type="submit" style="width:100%;background:#009688;color:#fff;border:none;border-radius:6px;padding:0.7em 0;font-weight:600;font-size:1.08rem;cursor:pointer;">Subscribe &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="subscribe-popup" class="floating-popup custom-popup" style="display:none;">
+    <span class="popup-close" aria-label="Close">&times;</span>
+    <h2>Read our news &amp; commentary</h2>
+    <p>Sign up to our news alerts to receive our regular newsletter and insights into the crypto market direct to your inbox.</p>
+    <div class="modal-disclaimer">
+      B2T does not transact with or provide any service to any retail investor or consumer. By subscribing to our content, you represent that you are not a retail investor or consumer. Please refer to our disclaimer for further information.
+    </div>
+    <form class="modal-form">
+      <label class="modal-checkbox"><input type="checkbox" required> Não sou um robô</label>
+      <div class="recaptcha-placeholder" style="background:#fff2; border-radius:6px; padding:0.5em 1em; margin-bottom:0.7em; color:#fff; font-size:0.95em;">[reCAPTCHA placeholder]</div>
+      <input type="email" placeholder="Enter email here" required>
+      <button type="submit" class="modal-subscribe-btn">Subscribe <span class="arrow">→</span></button>
+    </form>
+  </div>
+  <script>
+  // Floating popup open/close logic for hover only
+  (function() {
+    const popup = document.getElementById('subscribe-popup');
+    const closeBtn = document.querySelector('.popup-close');
+    const subscribeBtn = document.querySelector('.subscribe');
+    let hoverTimeout;
+
+    function showPopup() {
+      clearTimeout(hoverTimeout);
+      popup.style.display = 'block';
+    }
+    function hidePopup() {
+      hoverTimeout = setTimeout(() => {
+        popup.style.display = 'none';
+      }, 120);
+    }
+
+    if (subscribeBtn && popup) {
+      subscribeBtn.addEventListener('mouseenter', showPopup);
+      subscribeBtn.addEventListener('mouseleave', hidePopup);
+      popup.addEventListener('mouseenter', showPopup);
+      popup.addEventListener('mouseleave', hidePopup);
+    }
+    if (closeBtn && popup) {
+      closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    }
+  })();
+  </script>
+  <main>
+    <div class="center-card">
+      <h1 style="text-align:center;color:#009688;font-size:2rem;font-weight:700;margin-bottom:2.5rem;">About</h1>
+      <div style="color:#005662;font-size:1.13rem;line-height:1.6;text-align:center;">[Insert your about content here]</div>
+    </div>
+  </main>
+  <section style="background:linear-gradient(90deg,#009688 0%,#005662 100%);padding:2.5rem 0 2rem 0;margin-top:3rem;">
+    <div style="max-width:700px;margin:0 auto;text-align:left;color:#fff;padding:0 1.5rem;">
+      <h2 style="font-size:1.6rem;font-weight:600;margin-bottom:1rem;">Subscribe</h2>
+      <div style="font-size:1.08rem;margin-bottom:1.5rem;">Sign up to our news alerts to receive our regular newsletter and institutional insights into the crypto market direct to your inbox.</div>
+      <form style="display:flex;gap:1rem;max-width:500px;">
+        <input type="email" placeholder="Enter email here" style="flex:1;padding:0.7em 1em;border:none;border-radius:6px;font-size:1rem;outline:none;" required>
+        <button type="submit" style="background:#fff;color:#009688;font-weight:600;border:none;border-radius:6px;padding:0.7em 1.5em;font-size:1.08rem;cursor:pointer;">Subscribe &rarr;</button>
+      </form>
+      <div style="font-size:0.95rem;margin-top:1.2em;opacity:0.85;">b2t does not transact with or provide any service to any retail investor or consumer. By subscribing to our content, you represent that you are not a retail investor or consumer. Please refer to our disclaimer for further information.</div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 b2t. All rights reserved.</p>
+  </footer>
+</body>
+</html> 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Overview - B2T</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-container">
+    <div class="logo"><a href="index.html">B2T</a></div>
+    <nav>
+      <ul class="nav-list">
+        <li class="has-dropdown"><a href="#">Solutions</a>
+          <ul class="dropdown-menu">
+            <li><a href="solutions-trading-overview.html">Trading Overview</a></li>
+            <li><a href="otc-products.html">OTC Products</a></li>
+            <li><a href="liquidity-partner.html">Liquidity Partner</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="social-impact-csr.html">Social Impact and CSR</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Institutional Insight</a></li>
+        <li class="has-dropdown"><a href="#">Join B2T</a>
+          <ul class="dropdown-menu">
+            <li><a href="our-values.html">Our Values</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="button">CONTACT</a>
+      <button class="button subscribe" id="subscribe-btn">SUBSCRIBE</button>
+    </div>
+  </header>
+  <div id="subscribe-popup" class="floating-popup custom-popup" style="display:none;">
+    <span class="popup-close" aria-label="Close">&times;</span>
+    <h2>Read our news &amp; commentary</h2>
+    <p>Sign up to our news alerts to receive our regular newsletter and insights into the crypto market direct to your inbox.</p>
+    <div class="modal-disclaimer">
+      B2T does not transact with or provide any service to any retail investor or consumer. By subscribing to our content, you represent that you are not a retail investor or consumer. Please refer to our disclaimer for further information.
+    </div>
+    <form class="modal-form">
+      <label class="modal-checkbox"><input type="checkbox" required> Não sou um robô</label>
+      <div class="recaptcha-placeholder" style="background:#fff2; border-radius:6px; padding:0.5em 1em; margin-bottom:0.7em; color:#fff; font-size:0.95em;">[reCAPTCHA placeholder]</div>
+      <input type="email" placeholder="Enter email here" required>
+      <button type="submit" class="modal-subscribe-btn">Subscribe <span class="arrow">→</span></button>
+    </form>
+  </div>
+  <main>
+    <nav class="breadcrumb">
+      <a href="index.html">Solutions</a> &gt; <span>Trading overview</span>
+    </nav>
+    <section class="trading-hero">
+      <h1>Trading overview</h1>
+      <p class="subtitle">Our large and growing client base around the world trusts us to deliver seamless execution and settlement 24/7.</p>
+    </section>
+    <section class="features-table">
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">⏰</span>24/7 Liquidity across market conditions</div>
+        <div class="feature-right">The backbone of liquidity provision in the institutional crypto market, as investment managers, hedge funds, banks, family offices and exchanges/platforms rely on B2T liquidity.</div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">💱</span>Transparent prices</div>
+        <div class="feature-right">B2T streams prices electronically in all major crypto and fiat. With no per-transaction execution or settlement fees.</div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">🛠️</span>Bespoke Solutions</div>
+        <div class="feature-right">Cross-product solutions tailored to our clients’ needs; B2T provides bespoke exposure limits, margin and leverage requirements.</div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">💸</span>Post-trade settlement</div>
+        <div class="feature-right">Access two-way streaming pricing and execute trades without the need to pre-fund your account, and benefit from improved capital efficiency and reduced counterparty risk. Next-gen settlement infrastructure allows for swift crypto and fiat settlements across market conditions. B2T’s global operations team is available 24/7/365 to assist with any queries.</div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">🔌</span>Flexible connectivity</div>
+        <div class="feature-right">Login to our single dealer platform via the GUI or connect to B2T via API over WebSocket/REST and FIX. B2T also provides RFQ access via the GUI and API and is fully integrated with numerous third-party execution platforms.</div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">↔️</span>Flexible trade sizes</div>
+        <div class="feature-right">B2T has traded nearly a trillion dollars in cryptocurrency since 2018, ranging from small trades to multimillion dollar blocks.</div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-left"><span class="icon">🏦</span>Institutional expertise</div>
+        <div class="feature-right">B2T’s team brings deep experience from both traditional and digital asset markets, ensuring best-in-class service and execution.</div>
+      </div>
+    </section>
+    <section class="onboarding-section">
+      <h2>Client onboarding</h2>
+    </section>
+    <section class="subscribe-section">
+      <div class="container">
+        <h2>Subscribe</h2>
+        <p>Sign up to our news alerts to receive our regular newsletter and institutional insights into the crypto market direct to your inbox.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter email here" required>
+          <button type="submit" class="button">Subscribe &rarr;</button>
+        </form>
+        <div class="disclaimer">B2T does not transact with or provide any service to any retail investor or consumer. By subscribing to our content, you represent that you are not a retail investor or consumer. Please refer to our disclaimer for further information.</div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 B2T. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Subscribe Modal Popup -->
+  <div id="subscribe-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h2>Read our news &amp; commentary</h2>
+      <p>Sign up to our news alerts to receive our regular newsletter and insights into the crypto market direct to your inbox.</p>
+      <div class="modal-disclaimer">
+        B2T does not transact with or provide any service to any retail investor or consumer. By subscribing to our content, you represent that you are not a retail investor or consumer. Please refer to our disclaimer for further information.
+      </div>
+      <form class="modal-form">
+        <label class="modal-checkbox"><input type="checkbox" required> I am not a robot</label>
+        <input type="email" placeholder="Enter email here" required>
+        <button type="submit" class="modal-subscribe-btn">Subscribe <span class="arrow">→</span></button>
+      </form>
+    </div>
+  </div>
+  <script>
+  // Modal open/close logic
+  const subscribeBtn = document.querySelector('.nav-subscribe');
+  const modal = document.getElementById('subscribe-modal');
+  const closeBtn = document.querySelector('.modal-close');
+
+  if (subscribeBtn && modal && closeBtn) {
+    subscribeBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      modal.style.display = 'flex';
+    });
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+    window.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  }
+  </script>
+  <script>
+  // Floating popup open/close logic for hover only
+  (function() {
+    const popup = document.getElementById('subscribe-popup');
+    const closeBtn = document.querySelector('.popup-close');
+    const subscribeBtn = document.querySelector('.subscribe');
+    let hoverTimeout;
+
+    function showPopup() {
+      clearTimeout(hoverTimeout);
+      popup.style.display = 'block';
+    }
+    function hidePopup() {
+      hoverTimeout = setTimeout(() => {
+        popup.style.display = 'none';
+      }, 120);
+    }
+
+    if (subscribeBtn && popup) {
+      subscribeBtn.addEventListener('mouseenter', showPopup);
+      subscribeBtn.addEventListener('mouseleave', hidePopup);
+      popup.addEventListener('mouseenter', showPopup);
+      popup.addEventListener('mouseleave', hidePopup);
+    }
+    if (closeBtn && popup) {
+      closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    }
+  })();
+  </script>
+</body>
+</html> 
